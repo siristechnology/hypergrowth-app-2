@@ -144,9 +144,9 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('debug.keystore')
+            storeFile file('beta.keystore')
             storePassword 'android'
-            keyAlias 'androiddebugkey'
+            keyAlias 'androidbetakey'
             keyPassword 'android'
         }
         release {
@@ -191,8 +191,6 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-gesture-handler')
-    implementation project(':react-native-svg')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 

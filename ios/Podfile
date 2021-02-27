@@ -27,10 +27,8 @@ target 'hindsightTraderRN' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
 
-  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
 
   target 'hindsightTraderRNTests' do
