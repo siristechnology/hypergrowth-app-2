@@ -14,7 +14,6 @@ import {
   SearchScreen,
   StockScreen,
   WatchlistScreen,
-  WelcomeScreen,
 } from '../screens';
 import { BottomNavigation } from './BottomNavigation';
 
@@ -23,11 +22,6 @@ export function RootNavigator() {
     <Router>
       <Lightbox key="comingSoonOverlay">
         <Stack key="rootNavigation" headerMode="none">
-          <Scene
-            key="welcomeScreen"
-            title="Welcome"
-            component={WelcomeScreen}
-          />
           <Tabs
             key="bottomNavigation"
             tabBarComponent={BottomNavigation}
