@@ -1,75 +1,33 @@
-## Overview
-They say hindsight is 20/20 in the markets right?  Well here's a watchlist app to help you to keep looking ahead.
+# HyperGrowth App
 
-|    |    |
-|:---|:---|
-| ![welcome_screen] | ![stock_screen] |
+[![Android Apk - Build & Release](https://github.com/siristechnology/hypergrowth-app/actions/workflows/android-build-publish.yml/badge.svg)](https://github.com/siristechnology/hypergrowth-app/actions/workflows/android-build-publish.yml)
+[![DeepScan grade](https://deepscan.io/api/teams/5348/projects/7146/branches/66889/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5348&pid=7146&bid=66889)
+[![Known Vulnerabilities](https://snyk.io/test/github/siristechnology/hypergrowth-app/badge.svg?targetFile=android/app/build.gradle)](https://snyk.io/test/github/siristechnology/hypergrowth-app?targetFile=android/app/build.gradle)
 
+<br/>
+<div>
+<img src="android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" alt="screenshot-1" height="80" style="margin-right:10px"/>
+<a href='https://play.google.com/store/apps/details?id=com.siristechnology.hypergrowth&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target='_blank' rel="noopener noreferrer"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="80"/></a>
+</div>
+  
+## Latest screenshot
 
+<div>
+<img src="assets/images/screenshot-1.png" alt="screenshot-1" width="300" style="margin-right:20px"/>
+<img src="assets/images/screenshot-2.png" alt="screenshot-2" width="300"/>
+</div>
 
+## How to Run locally
 
-The application is still a major work in progress and pretty much an effort for me to aggressively get back involved with two things that I've always personally been extremely passionate about:  Coding and the stock market.
+-   Install Android Studio
+-   Install node (12.x), yarn (1.x)
+-   Run Android emulator. (from Android Studio or Genymotion)
+-   Run Metro bundler. `yarn start`
+-   Run Android app. `yarn android`
 
-Code quality, functionality and performance optimization will be improved over the coming weeks and months.
+## Tips
 
-## Installation
-- Clone the repository
-- copy the `.env.example` file to `.env`
-- `yarn start`
-- `react-native run-android`
-- `yarn react-devtools` to display react-native devtools, the application also has a built-in integration with [Reactotron][1] as well.
-
-## Functionality
-- User can create, edit, delete watchlists
-- User can search stocks
-- Charts and basic quote data are displayed for each stock.
-- Quote data is updated every 5 seconds
-- State is persisted locally
-
-## Todos
-- [x] Add initialize ThemeProvider
-- [x] Add initial navigation
-- [x] Add Iexcloud api service
-- [x] Add Api repository class for api service abstraction
-- [x] Add historical charts functionality
-- [x] Add real time quote data
-- [x] Add watchlist crud
-- [ ] ~~Add mobx for global state management~~
-- [x] Add redux for global state management
-- [x] Add localstorage state persistence
-- [x] Add search functionality
-- [ ] Add news features
-- [ ] Add stocktwits integration
-- [ ] Add additional watchlist filter functionality
-- [ ] Add Chart technical analysis functionality
-- [ ] Add stock fundamental analysis functionality
-- [ ] Add options data
-- [ ] Add intraday charting
-- [ ] Add user authentication
-- [ ] Add test suites
-- [ ] Refactor navigation
-- [ ] Redesign UI
-- [ ] Performance optimizations
-- [ ] Add storybook support
-- [ ] Update documentation
-- [ ] Add real time paper trading functionality & mock portfolio management
-
-## Known Issues
-- Only tested on android.
-- ~~There are some performance issues with the live data updates;~~
-- ~~When creating a new watchlist, sometimes symbol list component doesn't rerender immediately.~~
-- ~~Still issues with local state persistence, particularly with deeply nested state not being persisted correctly.~~
-- Performance issues with charts on WatchlistList view;
-
-## Shoutouts
-- [Native Base][2] - UI Library
-- [Victory Charts][3] - Chart UI
-- [IEXCloud][4] - Market Data API
-
-[welcome_screen]:https://raw.githubusercontent.com/eddielee394/react-native-hindsighttrader/develop/docs/images/welcome.png
-[stock_screen]:https://raw.githubusercontent.com/eddielee394/react-native-hindsighttrader/develop/docs/images/stockScreen.png
-
-[1]: https://github.com/infinitered/reactotron
-[2]: https://github.com/GeekyAnts/NativeBase
-[3]: https://github.com/FormidableLabs/victory-native
-[4]: https://www.iexcloud.io
+-   Run `yarn refresh` to reload android app quickly without rebuilding
+-   Run `yarn reset` to reset package manager cache
+-   Run `adb uninstall com.siristechnology.hypergrowth` to uninstall app from the android simulator
+-   Run `adb logcat` to view android emulator logs in terminal
