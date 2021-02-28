@@ -20,7 +20,7 @@
 ## How to Run locally
 
 -   Install Android Studio
--   Install node (12.x), yarn (1.x)
+-   Install node (14.x), yarn (1.x)
 -   Run Android emulator. (from Android Studio or Genymotion)
 -   Run Metro bundler. `yarn start`
 -   Run Android app. `yarn android`
@@ -29,5 +29,5 @@
 
 -   Run `yarn refresh` to reload android app quickly without rebuilding
 -   Run `yarn reset` to reset package manager cache
--   Run `adb uninstall com.siristechnology.hypergrowth` to uninstall app from the android simulator
+-   Run `adb uninstall com.siristechnology.hypergrowth.beta` to uninstall app from the android simulator
 -   Run `adb logcat` to view android emulator logs in terminal
