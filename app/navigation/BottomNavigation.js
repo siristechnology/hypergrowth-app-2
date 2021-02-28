@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Footer,
-  Icon,
-  ScrollableTab,
-  Tab,
-  TabHeading,
-  Tabs,
-  Text,
-} from 'native-base';
+import { Footer, Icon, Tab, TabHeading, Tabs, Text } from 'native-base';
 import { StyleSheet } from 'react-native';
 import theme from '../theme';
 
@@ -40,7 +32,6 @@ export function BottomNavigation(props) {
   return (
     <Footer>
       <Tabs
-        renderTabBar={() => <ScrollableTab style={styles.navTabBar} />}
         initialPage={index}
         tabBarUnderlineStyle={styles.navTabUnderlineStyle}
         tabBarPosition="bottom"

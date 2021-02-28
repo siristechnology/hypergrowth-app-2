@@ -8,8 +8,6 @@ import {
   Tabs,
 } from 'react-native-router-flux';
 import {
-  ComingSoonScreen,
-  LightboxScreen,
   NewsScreen,
   SearchScreen,
   StockScreen,
@@ -27,6 +25,13 @@ export function RootNavigator() {
             tabBarComponent={BottomNavigation}
             headerMode="none">
             <Scene
+              key="newsScreen"
+              icon="ios-megaphone"
+              title="News"
+              tabNav
+              component={NewsScreen}
+            />
+            <Scene
               key="watchlistScreen"
               title="Watchlist"
               icon="eye"
@@ -41,42 +46,6 @@ export function RootNavigator() {
               component={SearchScreen}
             />
             <Scene
-              key="newsScreen"
-              icon="ios-megaphone"
-              title="News"
-              tabNav
-              component={NewsScreen}
-            />
-            <Scene
-              key="sectorsScreen"
-              icon="home-city-outline"
-              iconType="MaterialCommunityIcons"
-              title="Sectors"
-              onEnter={() => Actions.lightBoxScreen()}
-              tabNav
-              component={ComingSoonScreen}
-            />
-            <Scene
-              key="learnScreen"
-              icon="graduation-cap"
-              iconType="FontAwesome5"
-              title="Learn"
-              lightbox={true}
-              onEnter={() => Actions.lightBoxScreen()}
-              tabNav
-              component={ComingSoonScreen}
-            />
-            <Scene
-              key="tradeScreen"
-              icon="rocket"
-              iconType="MaterialCommunityIcons"
-              title="Trade"
-              lightbox={true}
-              onEnter={() => Actions.lightBoxScreen()}
-              tabNav
-              component={ComingSoonScreen}
-            />
-            <Scene
               key="stockScreen"
               title="Stock"
               icon="area-chart"
@@ -85,11 +54,6 @@ export function RootNavigator() {
             />
           </Tabs>
         </Stack>
-        <Scene
-          key="lightBoxScreen"
-          hideNavBar={true}
-          component={LightboxScreen}
-        />
       </Lightbox>
     </Router>
   );

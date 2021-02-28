@@ -3,5 +3,4 @@ export SearchScreen from './SearchScreen';
 export StockScreen from './StockScreen';
 export WatchlistScreen from './WatchlistScreen';
 export ComingSoonScreen from './ComingSoonScreen';
-export LightboxScreen from './LightboxScreen';
 export LoadingScreen from './LoadingScreen';

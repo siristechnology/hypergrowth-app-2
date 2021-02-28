@@ -43,21 +43,10 @@ function WatchlistContainer(props) {
     <Container>
       <Header>
         <Left>
-          <Button onPress={() => RouteActions.pop()} transparent>
-            <Icon name="arrow-back" />
-          </Button>
-        </Left>
-        <TouchableHighlight onPress={handleShowModal}>
           <View style={{ alignItems: 'flex-start' }}>
             <Title>Watchlist</Title>
-            <Subtitle>{watchlist.name}</Subtitle>
           </View>
-        </TouchableHighlight>
-        <View>
-          <Button transparent light>
-            <Icon name="md-arrow-dropdown" />
-          </Button>
-        </View>
+        </Left>
         <Right>
           <Button onPress={() => RouteActions.searchScreen()} transparent>
             <Icon name="search" />
