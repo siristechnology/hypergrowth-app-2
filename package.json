@@ -1,13 +1,23 @@
 {
-  "name": "hindsightTraderRN",
+  "name": "hypergrowth",
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "android": "react-native run-android --variant unsigneddebug",
+    "ios": "react-native run-ios",
     "start": "react-native start",
-    "react-devtools": "react-devtools",
+    "log:android": "react-native log-android",
+    "refresh": "adb shell input keyevent 46 46",
+    "reset": "react-native start --reset-cache",
+    "build": "cd android && ./gradlew app:assembleSignedRelease && cd ..",
+    "bundle": "cd android && ./gradlew app:bundleSignedRelease && cd ..",
+    "build-detox-android": "detox build -c android.emu.debug",
+    "test-detox-android": "detox test -c android.emu.debug",
     "test": "jest",
+    "react-devtools": "react-devtools",
     "clean-gradle": "cd android && gradlew clean && adb kill-server && yarn adb",
-    "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081"
+    "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
