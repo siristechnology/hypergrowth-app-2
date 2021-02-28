@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Actions,
-  Lightbox,
-  Router,
-  Scene,
-  Stack,
-  Tabs,
-} from 'react-native-router-flux';
+import { Lightbox, Router, Scene, Stack, Tabs } from 'react-native-router-flux';
 import {
   NewsScreen,
   SearchScreen,
