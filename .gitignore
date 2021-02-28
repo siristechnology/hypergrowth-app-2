@@ -59,7 +59,7 @@ buck-out/
 /ios/Pods/
 
 # Env files
-/.env
+# /.env
 
 # misc
 /misc
