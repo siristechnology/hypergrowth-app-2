@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.hindsighttraderrn"
+        applicationId "com.siristechnology.hypergrowth.beta"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

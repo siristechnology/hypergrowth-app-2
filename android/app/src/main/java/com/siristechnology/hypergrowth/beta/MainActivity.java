@@ -1,4 +1,4 @@
-package com.hindsighttraderrn;
+package com.siristechnology.hypergrowth.beta;
 
 import com.facebook.react.ReactActivity;
 

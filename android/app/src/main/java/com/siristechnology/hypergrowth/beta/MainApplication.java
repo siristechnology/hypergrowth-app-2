@@ -1,4 +1,4 @@
-package com.hindsighttraderrn;
+package com.siristechnology.hypergrowth.beta;
 
 import android.app.Application;
 import android.util.Log;
