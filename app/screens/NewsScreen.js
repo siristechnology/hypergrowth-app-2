@@ -5,13 +5,7 @@ import { StyleSheet } from 'react-native';
 import theme from '../theme';
 
 function NewsScreen(props) {
-  return (
-    <Container>
-      <Tab heading="News" style={styles.tab}>
-        <StockNews />
-      </Tab>
-    </Container>
-  );
+  return <Container />;
 }
 
 const styles = StyleSheet.create({
