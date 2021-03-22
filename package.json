@@ -9,7 +9,7 @@
     "log:android": "react-native log-android",
     "refresh": "adb shell input keyevent 46 46",
     "reset": "react-native start --reset-cache",
-    "build": "cd android && ./gradlew app:assembleSignedRelease && cd ..",
+    "build": "cd android && ./gradlew app:`assembleSignedRelease && cd ..",
     "bundle": "cd android && ./gradlew app:bundleSignedRelease && cd ..",
     "build-detox-android": "detox build -c android.emu.debug",
     "test-detox-android": "detox test -c android.emu.debug",
@@ -27,9 +27,11 @@
     "moment": "^2.24.0",
     "native-base": "^2.13.8",
     "native-base-autocomplete": "thg303/native-base-autocomplete",
+    "prop-types": "latest",
     "qs": "^6.9.0",
     "react": "16.8.6",
     "react-native": "^0.61.2",
+    "react-native-bootsplash": "^3.2.0",
     "react-native-dialog": "^5.6.0",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-inappbrowser-reborn": "^3.1.0",
@@ -38,6 +40,7 @@
     "react-native-router-flux": "^4.2.0-beta.1",
     "react-native-svg": "^9.11.1",
     "react-native-swipe-list-view": "^2.0.3",
+    "react-native-vector-icons": "^8.1.0",
     "react-redux": "^7.1.1",
     "reactotron-apisauce": "^3.0.0",
     "reactotron-react-native": "^4.0.2",
@@ -45,8 +48,7 @@
     "redux": "^4.0.4",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
-    "victory-native": "^33.0.0",
-    "prop-types": "latest"
+    "victory-native": "^33.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",

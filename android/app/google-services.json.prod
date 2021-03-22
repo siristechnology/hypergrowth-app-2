@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "385538622631",
+    "project_id": "hypergrowth-prod",
+    "storage_bucket": "hypergrowth-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385538622631:android:cb593c3593cdf5c1ca4782",
+        "android_client_info": {
+          "package_name": "com.siristechnology.hypergrowth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385538622631-iguuoboq6lvc54olehchg9c3fv5pucbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDymu7AR_CTnQjtROiXzOd-2yflEgu9skw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385538622631-iguuoboq6lvc54olehchg9c3fv5pucbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
